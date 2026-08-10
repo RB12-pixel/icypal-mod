@@ -13,11 +13,11 @@ repositories {
 
 dependencies {
     minecraft 'com.mojang:minecraft:26.2'
-    // QUESTA è LA RIGA SBAGLIATA -> cambiala con questa:
-    mappings 'net.fabricmc:yarn:26.2+build.1'
+    
+    // USA QUESTA AL POSTO DELLA VECCHIA YARN
+    mappings 'net.fabricmc:yarn:1.21.6+build.1:v2'
     
     modImplementation 'net.fabricmc:fabric-loader:0.16.15'
-    // E ANCHE FABRIC API CAMBIA PER 26.2:
     modImplementation 'net.fabricmc.fabric-api:fabric-api:0.126.0+1.21.6'
 }
 
