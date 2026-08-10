@@ -1,0 +1,15 @@
+plugins {
+    id 'fabric-loom' version '1.11-SNAPSHOT'
+    id 'maven-publish'
+}
+group = 'com.icypal'
+version = '1.0.0'
+repositories { maven { url 'https://maven.fabricmc.net/' } }
+dependencies {
+    minecraft 'com.mojang:minecraft:26.2'
+    mappings 'net.fabricmc:yarn:26.2+build.1:v2'
+    modImplementation 'net.fabricmc:fabric-loader:0.16.15'
+    modImplementation 'net.fabricmc.fabric-api:fabric-api:0.126.0+26.2'
+}
+java { sourceCompatibility = JavaVersion.VERSION_21; targetCompatibility = JavaVersion.VERSION_21 }
+loom { splitEnvironmentSourceSets() }
